@@ -48,8 +48,17 @@ body {
 /* Header */
 .site-header {
   background: var(--surface);
+  padding: 2.5rem 0 0;
+}
+
+/* Navigation: separate from the header so only it stays at the top while scrolling */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: var(--surface); /* opaque, so content never shows through */
   border-bottom: 1px solid var(--border);
-  padding: 2.5rem 0 1.25rem;
+  padding: 0.75rem 0;
 }
 
 /* Photo and text: stacked on mobile, side by side on desktop */
@@ -90,7 +99,7 @@ body {
 
 .focus-list {
   list-style: none;
-  margin: 0 0 1.5rem;
+  margin: 0 0 0.75rem;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +157,7 @@ main {
 
 section {
   padding: 1.75rem 0 0.5rem;
-  scroll-margin-top: 1rem;
+  scroll-margin-top: 4rem; /* keeps the heading clear of the sticky navigation */
 }
 
 h2 {
