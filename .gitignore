@@ -1,0 +1,14 @@
+# Zugangsdaten
+.env
+.env.*
+!.env.example
+
+# Temporäre Dateien
+*.log
+*.tmp
+
+# Windows
+Thumbs.db
+
+# Abhängigkeiten
+node_modules/
